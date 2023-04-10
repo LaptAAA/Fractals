@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp2.TreeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window1" Height="212" Width="248"  ResizeMode="NoResize">
+    <Grid>
+        <ComboBox IsSelected="True" HorizontalAlignment="Left" Margin="106,23,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_Deep" Grid.ColumnSpan="2">
+            <TextBlock>1</TextBlock>
+            <TextBlock>2</TextBlock>
+            <TextBlock>3</TextBlock>
+            <TextBlock>4</TextBlock>
+            <TextBlock>5</TextBlock>
+            <TextBlock>6</TextBlock>
+            <TextBlock>7</TextBlock>
+            <TextBlock>8</TextBlock>
+            <TextBlock>9</TextBlock>
+            <TextBlock>10</TextBlock>
+            <TextBlock>11</TextBlock>
+            <TextBlock>12</TextBlock>
+        </ComboBox>
+        <Label Content="Обдуваемое ветром фрактальное дерево" HorizontalAlignment="Left" Margin="4,-3,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+        <ComboBox IsSelected="True" HorizontalAlignment="Left" Margin="106,104,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_Coef" Grid.ColumnSpan="2">
+            <TextBlock>40%</TextBlock>
+            <TextBlock>50%</TextBlock>
+            <TextBlock>60%</TextBlock>
+            <TextBlock>70%</TextBlock>
+        </ComboBox>
+        <Button x:Name="buttonCreate" Content="Создать фрактал" HorizontalAlignment="Left" Margin="68,145,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click"/>
+        <Label Content="Глубина рекурсии" HorizontalAlignment="Left" Margin="-3,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Правый угол" HorizontalAlignment="Left" Margin="12,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Левый угол" HorizontalAlignment="Left" Margin="15,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Коэффициент" HorizontalAlignment="Left" Margin="16,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.258,0.53"/>
+        <TextBox x:Name="buttonR" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" HorizontalAlignment="Left" Margin="106,56,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" MaxLength="2"/>
+        <TextBox x:Name="buttonL" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" HorizontalAlignment="Left" Margin="106,79,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" MaxLength="2"/>
+
+    </Grid>
+</Window>

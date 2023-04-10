@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="700"
+        MinWidth="700"
+        MinHeight="700">
+
+
+    <Grid >
+        <Viewbox Margin="0,31,0,4" Grid.ColumnSpan="2" >
+            <Canvas Name="mainCanvas" ClipToBounds="True" Width="122" Height="113"  HorizontalAlignment="Center"/>
+        </Viewbox>
+
+        <Menu VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2">
+
+            <MenuItem Header="Выбор фрактала" FontSize="18">
+                <MenuItem Header="Обдуваемое ветром фрактальное дерево" Click="MenuItem_Tree">
+                </MenuItem>
+                <MenuItem Header="Кривая Коха" Click="MenuItem_KochСurve"></MenuItem>
+                <MenuItem Header="Ковер Серпинского" Click="MenuItem_SierpinskiСarpet"></MenuItem>
+                <MenuItem Header="Треугольник Серпинского" Click="MenuItem_SierpinskiTriangle"></MenuItem>
+                <MenuItem Header="Множество Кантора" Click="MenuItem_CantorSet"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Глубина рекурсии" FontSize="18" Click="MenuItem_Deep" ></MenuItem>
+            <MenuItem Header="Градиент" FontSize="18" Click="MenuItem_Gradient" >
+            </MenuItem>
+            <MenuItem Header="Сохранить" FontSize="18" Click="MenuItem_Save" ></MenuItem>
+        </Menu>
+
+
+
+
+
+    </Grid>
+
+
+
+</Window>

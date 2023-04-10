@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp2.CantorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window3" Height="148" Width="247" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-16">
+        <ComboBox IsSelected="True" HorizontalAlignment="Left" Margin="124,23,0,0" VerticalAlignment="Top" Width="103" SelectionChanged="ComboBox_SelectionChanged_Deep">
+            <TextBlock>1</TextBlock>
+            <TextBlock>2</TextBlock>
+            <TextBlock>3</TextBlock>
+            <TextBlock>4</TextBlock>
+            <TextBlock>5</TextBlock>
+            <TextBlock>6</TextBlock>
+            <TextBlock>7</TextBlock>
+            <TextBlock>8</TextBlock>
+            <TextBlock>9</TextBlock>
+            <TextBlock>10</TextBlock>
+        </ComboBox>
+        <ComboBox IsSelected="True" HorizontalAlignment="Left" Margin="124,50,0,0" VerticalAlignment="Top" Width="103" SelectionChanged="ComboBox_SelectionChanged_Indent">
+            <TextBlock>0</TextBlock>
+            <TextBlock>2</TextBlock>
+            <TextBlock>4</TextBlock>
+            <TextBlock>6</TextBlock>
+        </ComboBox>
+        <Label x:Name="labelName" Content="Множество Кантора" HorizontalAlignment="Center" Margin="0,-3,0,0" VerticalAlignment="Top" Width="179" HorizontalContentAlignment="Center"/>
+        <Button x:Name="buttonCreate" Content="Создать фрактал" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Width="112"  Height="25" Click="buttonCreate_Click"/>
+        <Label Content="Глубина рекурсии" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label Content="Отступ" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="109" HorizontalContentAlignment="Center" />
+
+        <Label Content="" HorizontalAlignment="Left" Margin="34,0,0,0" VerticalAlignment="Center" Height="26" Width="30"/>
+
+    </Grid>
+</Window>
